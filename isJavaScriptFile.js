@@ -4,10 +4,15 @@
  * else return false
  * 
  * endsWith method()
+ * 
+ * validation of value type: using typeof
  */
 
 function isJavaScriptFile(fileName){
-    // console.log(fileName);
+// i/p value validation before input
+if(typeof fileName !='string' || fileName.length == 0){
+    return "Input is not Valid!"
+}
     if (fileName.endsWith('.js')){
         return true;
     }
@@ -26,6 +31,11 @@ let result2 = isJavaScriptFile("App.jsx");
 console.log(result2);
 let result3 = isJavaScriptFile("index.html");
 console.log(result3);
+
+let result4 = isJavaScriptFile("");
+console.log(result4);
+let result5 = isJavaScriptFile("");
+console.log(result4);
 
 
 // Alternate: (nested if)

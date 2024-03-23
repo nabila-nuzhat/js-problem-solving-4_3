@@ -8,7 +8,7 @@
  * ex: 10 rad to degree: 
  * 10 rad * 180/PI
  * 
- * validation of value: using typeof
+ * validation of value type: using typeof
  */
 
 function radianToDegree(radian){
